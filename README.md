@@ -2,6 +2,10 @@
 
 The purpose of this application is to calculate the amount of jumps each starship has to do in order to reach a desired destination (in MGLTS) inputted by the user.
 
+Note: This app is for educational purposes ONLY.
+
+### INSTRUCTIONS
+
 Its very simple to use!. 
 
 1. Just download the code. 
