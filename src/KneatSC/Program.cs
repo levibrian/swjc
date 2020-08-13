@@ -8,7 +8,7 @@ namespace KneatSC
 {
     class Program
     {
-        private IMainPresenter mainPresenter;
+        private readonly IMainPresenter mainPresenter;
 
         public Program(IMainPresenter myManager)
         {

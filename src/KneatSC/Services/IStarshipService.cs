@@ -8,6 +8,5 @@ namespace KneatSC.Services
     {
         Task<IEnumerable<StarshipDTO>> Get(int page, long distance);
         Task<IEnumerable<StarshipDTO>> GetAll(long distance);
-        Task<IEnumerable<StarshipDTO>> GetWithCalculatedJumps(long distance);
     }
 }

@@ -13,27 +13,6 @@ namespace KneatSC.Services
     {
         const string API_URL = "http://swapi.dev/api/starships/";
 
-        public async Task<IEnumerable<StarshipDTO>> GetWithCalculatedJumps(long distance)
-        {
-            try
-            {
-                var starshipList = (await this.GetAll(distance)).Where(starship => !string.IsNullOrEmpty(starship.MGLT) &&
-                                                           starship.MGLT != "unknown")
-                                        .ToList();
-
-                starshipList.ForEach(starship =>
-                {
-                    starship.JumpCount = distance / Convert.ToInt64(starship.MGLT);
-                });
-
-                return starshipList;
-            }
-            catch (Exception)
-            {
-                throw;
-            }
-        }
-
         public async Task<IEnumerable<StarshipDTO>> Get(int page, long distance)
         {
             try
