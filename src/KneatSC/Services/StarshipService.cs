@@ -32,7 +32,7 @@ namespace KneatSC.Services
                                                     Manufacturer = (string)item["manufacturer"],
                                                     HyperdriveRating = (string)item["hyperdrive_rating"],
                                                     MGLT = (string)item["MGLT"],
-                                                    JumpCount = Math.Round(decimal.Divide(distance, (decimal)item["MGLT"]), 3)
+                                                    JumpCount = Math.Round(decimal.Divide(distance, (decimal)item["MGLT"]))
                                                 });
                 });
             }
