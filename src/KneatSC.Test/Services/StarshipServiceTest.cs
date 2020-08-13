@@ -2,7 +2,7 @@
 using KneatSC.Services;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace KneatSC.Test.Service
+namespace KneatSC.Test.Services
 {
     [TestClass]
     public class StarshipServiceTest

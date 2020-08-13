@@ -13,7 +13,9 @@ namespace KneatSC.Presenters
     public class MainPresenter : IMainPresenter
     {
         private readonly IStarshipService starshipService;
+
         private readonly ResourceManager headerResource;
+
         private readonly ResourceManager appResource;
         
         public MainPresenter(IStarshipService starshipService)
